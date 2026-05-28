@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300;
+    background-image: radial-gradient(circle at top, #f1f5f9 0%, #f8fafc 100%);
+  }
+
+  .dark body {
+    background-image: radial-gradient(circle at top, #0b0f19 0%, #020617 100%);
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  p[data-i18n],
+  span[data-i18n="cliSpeedNote"] {
+    white-space: pre-line;
+  }
+}
+
+/* Custom Scrollbars for terminal and lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.45);
+}
+
+
+
+.slide-up {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

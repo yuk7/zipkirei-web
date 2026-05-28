@@ -1,0 +1,20 @@
+{
+  "name": "zipkirei",
+  "type": "module",
+  "collaborators": [
+    "yuk7 <yukx00@gmail.com>"
+  ],
+  "description": "Tool to clean up ZIP archives: NFC normalization, UTF-8 filename flags, and junk file removal",
+  "version": "0.2.0",
+  "license": "MIT",
+  "files": [
+    "zipkirei_bg.wasm",
+    "zipkirei.js",
+    "zipkirei.d.ts"
+  ],
+  "main": "zipkirei.js",
+  "types": "zipkirei.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
