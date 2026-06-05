@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/zipkirei/',
+  base: '/',
   assetsInclude: ['**/*.wasm'],
   server: {
     port: 3000,
