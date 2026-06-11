@@ -129,10 +129,10 @@ export const translations: Record<Language, TranslationDict> = {
   },
   ja: {
     title: "zipkirei",
-    seoTitle: "zipkirei - macOS ZIPの文字化け・ゴミファイルを修復",
-    seoDescription: "ZIPファイルの文字化け、NFDの分解文字、__MACOSXや.DS_Storeなどの不要ファイルを修復・除去します。ZIP処理はブラウザ内でローカルに実行されます。",
-    subtitle: "ZIPファイルの文字化け・ゴミファイルを簡単に綺麗に",
-    tagline: "Macユーザーから受け取ったZIPファイルの文字化け、文字の分解(NFD)、謎のゴミファイルに悩んでいませんか？",
+    seoTitle: "zipkirei - macOS ZIPの文字化け・OSの不要ファイルを簡単綺麗に",
+    seoDescription: "ZIPファイルの文字化け、NFDの分解文字、__MACOSXや.DS_Storeなどの不要ファイルを簡単に綺麗に修正・除去します。ZIP処理はブラウザ内でローカルに実行されます。",
+    subtitle: "ZIPファイルの文字化け・ゴミファイルを簡単綺麗に",
+    tagline: "Macユーザーから受け取ったZIPファイルの文字化け、文字の分解(NFD)、OSの不要なファイルに悩んでいませんか？",
     offlineBadge: "ZIP処理は100%ローカル",
     offlineDesc: "すべての処理はブラウザ内の WebAssembly で完結します。ZIPファイルが外部サーバーに送信されることは一切ありません。",
     trustLocalTitle: "ブラウザ内でローカル処理",
@@ -176,7 +176,7 @@ export const translations: Record<Language, TranslationDict> = {
     cliGitHubBtn: "GitHubで見る",
     
     whyTitle: "このようなZIPファイルの問題を修正します",
-    whyNfdTitle: "2. Unicode文字が分解されたファイル名",
+    whyNfdTitle: "2. Unicode文字がバラバラに分解されたファイル名",
     whyNfdDesc: "macOSで作成されたZIPでは、ファイル名が分解されたUnicode形式で保存されることがあります。\nWindowsなどで開いたとき、「にほんご.txt」が「にほんこ゛.txt」のように濁点の離れた形に見える原因になります。",
     whyUtf8Title: "1. ファイル名の文字化け",
     whyUtf8Desc: "ZIP内でファイル名の文字コードが明示されていないと、Windowsなどの展開ツールが読み方を間違えてしまいます。\nその結果、ファイル名が文字化けすることがあります。",
@@ -186,7 +186,7 @@ export const translations: Record<Language, TranslationDict> = {
     speedTitle: "なぜ速いのか",
     speedDesc: "zipkireiはZIPをいったん展開して、もう一度圧縮し直すツールではありません。\nZIP内の圧縮済みファイルデータはそのままに、ファイル名やエントリ一覧などのZIPメタデータを修復します。\nファイルデータには触れないため、確認済みの範囲ではZipCryptoやAES-256で暗号化されたパスワード付きZIPにも対応します。",
     limitationsTitle: "制限事項",
-    limitationsDesc: "分割されたZIPファイルには対応していません。\nファイル名修正では、元のファイル名がUTF-8として正しく読める必要があります。\n不安な場合は、先にプレビュー(dry-run)で修復内容を確認してください。"
+    limitationsDesc: "分割されたZIPファイルには対応していません。\nファイル名修正では、元のファイル名がUTF-8として正しく読める必要があります。\n不安な場合は、先にプレビュー(dry-run)でファイル名が正しく表示されているか修復内容を確認してください。"
   },
   ko: {
     title: "zipkirei",
